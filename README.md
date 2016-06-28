@@ -2,12 +2,16 @@
 #Enumerations as a Service Bundle
 *by Joseroes https://github.com/joseroes/ .*
 
+This bundle was born as a technical need I had in PHP.  As a Java Developer, I'm used to have enumerations, but PHP doesn't allow this kind of data type. Well, it does, but only if you use Doctrine and only is you use MySQL. This is an DB engine and ORM/ODM agnostic enumerations bundle, just like the ones we have in Java and many other programming languages.
+
 ##Installation
 Add 
 `new Joseroes\EnumBundle\EnumBundle()`, to `AppKernel.php`
 
 ##Configuration
+Compatible with Symfony2 2.X
 
+Doctrine compatible no matter the database engine you're using. This bundle is completelly agnostic of the technology you're using for data access. It only lives in the Entity/Document level.
 
 ##How to use
 Create a class extending BasicEnum class from Joseroes\EnumBundle, with the list of values you want to enumerate like this:
