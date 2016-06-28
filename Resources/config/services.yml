@@ -1,0 +1,11 @@
+services:
+  united_enum:
+    class: Joseroes\EnumBundle\Controller\EnumService
+    arguments: [@translator]
+    calls:
+      - [ setContainer,[ @service_container ] ]
+  enum.twig.enum_extension:
+    class: Joseroes\EnumBundle\Twig\EnumTwigExtension
+    arguments: [@enum]
+    tags:
+        - { name: twig.extension }
